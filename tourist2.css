@@ -1,0 +1,90 @@
+/* Set background image and general body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff; /* Set text color to white for better contrast */
+    /*background: url('C:/Users/DELL/Desktop/Python-nikhil/img.jpg') no-repeat center center fixed;  /* Add your background image path here */
+    background-size: cover;
+    height: 100vh; /* Ensure full screen height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Style for header */
+header {
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Make the font size responsive for large screens and smaller screens */
+header h1 {
+    font-size: 0.5vw; /* Reduced font size from 8vw to 5vw */
+    margin: 0;
+    line-height: 1.2; /* Ensure the text doesn't overlap */
+}
+
+header p {
+    font-size: 1.5vw; /* Use viewport width for the subtitle as well */
+    margin: 10px 0;
+}
+
+/* Style for navigation */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style for main content container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: none; /* Remove the white box, keep transparent */
+    color: white; /* Ensure text is visible */
+}
+
+.container h2, .container h3 {
+    font-size: 1em;
+    color: white; /* Make sure header text is white for visibility */
+}
+
+.container ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.container ul li {
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places Near Paderu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: url('C:/Users/DELL/Desktop/Python-nikhil/img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            color: #007bff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        ul li img {
+            display: none;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tourist Places Near Paderu</h1>
+        <p>Discover the beautiful landscapes and cultural heritage of Paderu's surrounding areas.</p>
+    </header>
+
+    <nav>
+        <a href="tourist_places.html">Tourist Places Near Paderu</a>
+    </nav>
+
+    <div class="container">
+        <h2>Must-Visit Places</h2>
+        <ul>
+            <li onclick="toggleImage('image1')">
+                <strong>Chaparai Waterfalls</strong> - A stunning waterfall located in the hills, perfect for a day trip.
+                <br>
+                <img id="image1" src="C:/Users/DELL/Desktop/Python-nikhil/ca.jpg" alt="Chaparai Waterfalls">
+            </li>
+            <li onclick="toggleImage('image2')">
+                <strong>Araku Valley</strong> - A picturesque valley surrounded by coffee plantations, ideal for nature lovers.
+                <br>
+                <img id="image2" src="C:/Users/DELL/Desktop/Python-nikhil/araku.jpeg" alt="Araku Valley">
+            </li>
+            <li onclick="toggleImage('image3')">
+                <strong>Tribal Museum</strong> - Explore local handicrafts, traditional arts, and the vibrant life of Paderu's indigenous communities.
+                <br>
+                <img id="image3" src="C:/Users/DELL/Desktop/Python-nikhil/ms.jpeg" alt="Tribal Museum">
+            </li>
+            <li onclick="toggleImage('image4')">
+                <strong>Coffee Plantations</strong> - Visit the lush coffee plantations that are a staple of Paderu's economy.
+                <br>
+                <img id="image4" src="C:/Users/DELL/Desktop/Python-nikhil/cp.jpg" alt="Coffee Plantations">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleImage(imageId) {
+            const img = document.getElementById(imageId);
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
